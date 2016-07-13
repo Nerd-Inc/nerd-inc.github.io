@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   id="svg5521"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="img07.svg">
+  <defs
+     id="defs5523" />
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.30699632"
+     inkscape:cx="223.48661"
+     inkscape:cy="217.7526"
+     inkscape:current-layer="layer1"
+     id="namedview5525"
+     showgrid="false"
+     inkscape:window-width="1331"
+     inkscape:window-height="744"
+     inkscape:window-x="35"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5527">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:1;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 133.7417,167.4859 34.93346,0 0,22.98255 0,8.73336 -17.92638,0 -17.00708,0 0,-9.19302 z"
+       id="rect6076"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <rect
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6079"
+       width="34.933464"
+       height="9.652668"
+       x="133.75839"
+       y="163.09897" />
+    <rect
+       style="opacity:1;fill:#999999;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6070"
+       width="255.46745"
+       height="158.61084"
+       x="20.801422"
+       y="9.4947605"
+       ry="9.7506666" />
+    <rect
+       style="opacity:1;fill:#f2f2f2;fill-opacity:0.81761008;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6072"
+       width="238.56631"
+       height="130.4088"
+       x="29.252005"
+       y="17.945337"
+       ry="0" />
+    <ellipse
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6074"
+       cx="149.7009"
+       cy="13.27305"
+       rx="1.3789525"
+       ry="1.6087779" />
+    <rect
+       y="198.26225"
+       x="99.861359"
+       height="2.2982547"
+       width="102.62952"
+       id="rect6081"
+       style="opacity:1;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:119.88236237px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="85.733902"
+       y="-48.379837"
+       id="text6098"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0449563,-0.95697781)"><tspan
+         sodipodi:role="line"
+         id="tspan6100"
+         x="85.733902"
+         y="-48.379837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Sawasdee;-inkscape-font-specification:Sawasdee">AI</tspan></text>
+    <path
+       style="opacity:1;fill:#ececec;fill-opacity:0.64150941;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 29.252005,17.457804 150.48529,17.778823 187.24786,148.40653 29.252005,148.58396 Z"
+       id="rect6083"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>
