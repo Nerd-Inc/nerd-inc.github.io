@@ -1,0 +1,288 @@
+<!--
+ * Author(s)		: [Collins Nji] <collins.geek@gmail.com> 
+ *			 		  	  [Wisdom Nji] <wisdomnji@gmail.com>
+ *
+ * Organisation	: Nerd Inc. [nerd.foodcointernational.com]
+ * Detail			: Nerd Inc Official website
+ * Copyright		: (c) Nerd Inc. 2016
+ * 
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Nerd</title>
+      <meta charset="utf-8">
+      <meta name="application-name"content="Nerd Incoporated" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Nerd Inc. in association with Zeeh Industry, Cameroon" >
+		<meta name="keywords" content="Nerd, nerd inc, software, development, code, programming, public relations, nerd code" >
+		<meta name="author" content="hacker110" >
+
+        <!-- Stylesheets & fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style01.css" />
+        <link rel="stylesheet" href="css/media-queries.css" />
+        <link rel="stylesheet" href="css/glyphs.css" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/fav2.ico">
+
+        <!-- Scripts -->
+			<script src="js/jquery-2.2.2.js"></script>
+			<script src="js/manipulator.js"></script>
+		<script>
+				$(window).scroll(function() {     
+    				var scroll = $(window).scrollTop();
+    					if (scroll > 100) {
+        					$(".main-header").addClass("active");
+        					$(".show-heading").css("visibility", "visible");
+   					 }
+    					else {
+        					$(".main-header").removeClass("active");
+        					$(".show-heading").css("visibility", "hidden");
+    					}
+    					$("#menu").click(function() {
+   	 						$(".nav").css("left", "0px");
+   					});
+						$("#close").click(function() {
+   			 				$(".nav").css("left", "-245px");
+						}); 
+				});
+				$(function() { 
+    				$(".fab").on("click", function( e ) {
+					 e.preventDefault();
+				   $("body, html").animate({ 
+            		scrollTop: $( $(this).attr('href') ).offset().top 
+        			}, 600);	 
+    		});
+        
+			});
+			</script>
+    </head>
+    <body>
+      <div id="content-wrapper">
+           <header>
+                <div class="main-header" id="header">
+                        <span class="logo">  
+                        
+                            <h1 class="show-heading"><span id="menu" class="icon-dehaze"></span> Nerd</h1>
+                          <nav>
+                            <ul>
+                                <li class="icon-home is-active"><a href="#"> Home </a></li>
+                                <li class="icon-data_usage"><a href="about.nerd.html"> About </a></li>
+                                <li class="icon-desktop_windows"><a href="products.nerd.html"> Products </a></li>
+                                <li class="icon-near_me"><a href="explore.nerd.html"> Explore </a></li>
+                                <!-- <li class="icon-code"><a href="#"> Developer </a></li>
+                                	<li><input type="search" placeholder="Search..." class="sb-search-input"></li>
+                                	<li class="icon-search"></li>
+                                -->
+                            </ul>
+                        	</nav>
+                        </span>
+                </div>
+            </header> 
+            <!-- Menu section for mobile devices -->
+            
+            <aside class="nav">
+            
+            	<div><span class="icon-arrow_back" id="close"></span><a href=""> Nerd </a></div>
+            	
+            	<div><a href="#" class="icon-home"> Home </a></div>
+            	<div><a href="about.nerd.html" class="icon-data_usage"> About </a></div>
+            	<div><a href="products.nerd.html" class="icon-desktop_windows"> Products </a></div>
+            	<div><a href="explore.nerd.html" class="icon-near_me"> Explore </a></div>
+            	<!-- <div><a href="#" class="icon-code"> Developer </a></div> -->
+            </aside>
+           
+           <!-- General content of body. It is relatively positioned to the `body` tag
+           	 -- so that resizing does not affect child elements 
+           	-->
+          
+          <!-- .content-wrapper is the main class that encloses everything -->
+          
+          <div id="content-display">
+          		<h1> Nerd </h1> 
+          		
+          		<!-- .big-picture: the main picture on every page that spans the whole visible width
+          		  -- This is archived by setting the height to 100vh and width to 100%
+          		-->
+                <div class="big-picture no-border"> 
+                    <img src="images/nerd-logo.svg" alt="" class="no-boarder">
+                </div>
+                	<div class="fab" href=".scroll"> 
+                		<h2 class="icon-keyboard_arrow_down scroll"></h2>
+                	</div>
+                <div id="slogan-box">
+                    <h2> 
+                      Going Further!
+                    </h2>
+                </div>
+                <section class="container card-columns">
+                    <div class="card">
+                        <img src="images/img06.svg">
+
+                        <h3>Nerd!</h3>
+                            <small>Going Further</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide"></li>
+                            </ul>
+                                <p id="pContent">Nerd is an Open Source software organisation based in Bamenda,
+                                						 Cameroon. Nerd is a start-up that deals with machine learning, 
+                                						 data mining, data analysis and knowledge extraction.
+                                  <!-- <br><br><span>Learn More</span> -->
+                                 </p>
+                            <!--h4>Learn More</h4>-->
+                            
+                    </div>
+                    <div class="card">
+                    <img src="images/img08.svg">
+
+                        <h3>Open Source</h3>
+                            <small>We build the software for everyone</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide2"></li>
+                            </ul>
+                                <p id="pContent2">Nerd Inc is an open source organisation which aims at 
+                                							creating fun for the "nerd" :), by having fun with high 
+                                							abstract concepts (machine learning, UI hacking, lossless 
+                                							data compression to optimum scale).
+                               <!-- <br><br><span>Learn More</span> -->
+                                 </p>
+                                 
+                    </div>
+                    <!-- <div class="card">
+                    <img src="images/google-io-16.jpg">
+
+                        <h3>Nerd | Code 2016</h3>
+                            <small>An event that was worth attending</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide3"></li>
+                            </ul>
+                                <p id="pContent3">Google I/O is an annual developer-focused conference held and organized by Google in San Francisco, California. Google I/O features highly technical, in-depth sessions focused on building web, mobile, and enterprise applications with Google and open web technologies such as Android, Chrome, Chrome OS, APIs, Google Web Toolkit, App Engine, and more.
+                                <br><br><span>Learn More</span> 
+                                 </p>
+                           </div>
+                         -->
+                    <div class="card">
+                                        <img src="images/img05.svg">
+
+                        <h3>Out-reach to community</h3>
+                            <small>We write code for everyone! </small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide4"></li>
+                            </ul>
+                                <p id="pContent4">We are open source. But, we don't only concentrate on 
+                                						the developers but also on rural communities! Nerd aims 
+                                						to creates apps for the rural people in Cameroon who can't 
+                                						easily get their products to the market so that they get a 
+                                						global market to easily sell their products.
+                              <!--  <br><br><span>Learn More</span> -->
+                                 </p>
+                       </div>
+                      <!-- <div class="card">
+                    <img src="images/chrome.png">
+
+                        <h3>Nerd Surfaze</h3>
+                            <small>A better browsing experience</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide5"></li>
+                            </ul>
+                                <p id="pContent5">
+                               <br><br><span>Learn More</span> 
+                                 </p>
+                    </div> 
+            			
+                	<div class="card">
+                    <img src="images/code-in.png">
+
+                        <h3>Nerd Code-In</h3>
+                            <small>Get prepared to code as a teenager!</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide6"></li>
+                            </ul>
+                                <p id="pContent6">Nerd Code-In, is a reach-out project to the community of 
+                                teenagers who are willing to get involved with Goodle Code-In but don't know exactly how!
+                                
+                              <br><br><span>Learn More</span> 
+                                 </p>
+                    </div>
+                    -->
+                    <div class="card">
+                        <img src="images/img09.svg">
+
+                        <h3>Stack UI</h3>
+                            <small>Coming Soon :)</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide7"></li>
+                            </ul>
+                                <p id="pContent7">Stack uI is a design language being developed by Nerd 
+                                							(Not released yet, still prototyping), to help front end
+                                							web developers easily create new and awesome user interfaces! 
+                                 </p>
+                            <!--h4>Learn More</h4>-->
+                            
+                    </div>
+                    <div class="card">
+                        <img src="images/img07.svg">
+
+                        <h3>Machine Learning</h3>
+                            <small>'Talk is cheap, show me he code'</small>
+                            <ul>
+                                <li class="icon-favorite"> </li>
+                                <li class="icon-bookmark_box"> </li>
+                                <li class="icon-share"> </li>
+                                <li class="icon-event_available"> </li>
+                                <li class="icon-details" id="showHide8"></li>
+                            </ul>
+                                <p id="pContent8">Nerd also gets deep into machine learning for code analysis and 
+                                							for developer tools, to help the developers community.
+                                   <!-- <br><br><span>Learn More</span> -->
+                                 </p>
+                            <!--h4>Learn More</h4>-->
+                            
+                    </div>                   
+                </section>
+               <footer class="footer">
+                		<img src="images/nerd-logo-grey.svg" alt="Nerd Inc">
+                		<ul>
+                			<li class="icon-flag"> Help</li>
+                			<li class="icon-vpn_lock"> Terms</li>
+                			<li class="icon-lock"> Privacy</li>
+                			<li class="icon-link"> Cookie Policy</li>
+                			<li>&copy; Nerd Inc 2016 </li>
+                		</ul>
+        			</footer>
+            </div>
+        </div>   
+    </body>
+</html>
