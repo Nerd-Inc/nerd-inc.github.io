@@ -1,0 +1,220 @@
+@media screen and (min-width: 300px) {
+    body {
+        font-size: 90%;
+    }
+
+    .main-header {
+        height: 50px;
+        transition: 0.5s ease;
+        font-size: 50%;
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        width: 100%;
+    }
+    .logo, .logo h1 span {
+    	padding-right: 30px;
+    }
+	nav, #content-display h1 {
+	display: none;
+	}
+	
+.icon-dehaze { display: inline-block; cursor: pointer; } 	
+.nav {
+	display: block;
+	position: fixed;
+	z-index: 10000;
+	background-color: #ededed;
+	width: 245px;
+	height: 100vh;
+	left: -245px;
+	top: 0;
+	padding: 0px;
+	transition: all 0.35s;	
+	}
+
+ .nav div {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	color: #505050;
+	font-family: ubuntu;
+	transition-property: background-color;
+	}
+.nav div:hover {
+	background-color: #ddd;
+	transition: 0.25s ease-in-out;
+	}
+.nav div:first-child span {
+	float: right;
+	color: #000;
+	margin: 25px;
+	cursor: pointer;
+	}
+.nav div a{
+	text-decoration: none;
+	display: block;
+	font-weight: 100;
+	color:  #505050;
+	padding: 2em;
+	
+	}	
+
+.big-picture img {
+	width: 90vw;
+	margin-top: 0px;
+	}
+	.card {
+		width: 100% !important;
+		margin: 15px 0px;
+	}
+	/*.card img {
+		height: 200px;
+		}
+	*/
+	.card small {
+		display: none;
+	}
+	/*
+	.card ul li {
+		float: none;
+		font-size: initial;
+		font-family: inherit;
+		clear: none;
+	}
+	*/
+	 .card-columns {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+ }
+ .footer ul {
+ 	display: none;
+ 	}
+}
+@media (min-width: 600px) {
+  .container {
+    width: 580px;
+ }
+    	 .card-columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+   .footer ul {
+ 	display: block;
+ 	}
+}
+@media (min-width: 900px) {
+  .container {
+    width: 880px;
+  }
+  	 .card-columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+	}
+	.footer ul {
+ 	display: block;
+ 	}
+}
+@media (min-width: 1200px) {
+	body {
+		font-size: 100%;
+		}
+	.icon-dehaze {
+		display: none;
+	}
+	.big-picture, 
+	.big-picture > img {
+    	position: relative;
+    	display: inline-block;
+    	width: initial;
+    	height: 100%;
+    	margin: auto;
+    	margin-top: 20px;
+}
+.main-header {
+    z-index: 100;
+    position: fixed;
+    display: block;
+    padding-top: 0px;
+    font-size: 100%;
+    width: 100%;
+    height:  100px;
+    background-color: #fff;
+    margin-top: 0px;
+    transition: 0.5s ease-in-out;  
+}
+
+nav, #content-display h1 {
+	display: block;
+	}
+  .container {
+    width: 1180px;
+  }
+    .card-columns {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+   .footer ul {
+ 	display: block;
+ 	}
+ 	.card small {
+		display: block;
+	}
+}
+@-moz-keyframes slider{
+	0%{
+		opacity: 1;
+		right: 0%;
+		}
+	40% {
+		opacity: 0.6;
+		right: 35%;
+	}
+	60% {
+		opacity: 0.4;
+		right: 70%;
+	}
+	100% {
+		opacity: 0;
+		right: 101%;
+		}
+	}
+.slide {
+	animation-name: slider;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-duration: 3s;
+	}
+.slide.n1 {
+	animation-delay: 5s;
+	}

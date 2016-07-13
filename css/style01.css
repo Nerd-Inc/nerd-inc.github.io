@@ -1,0 +1,370 @@
+
+html, *, *:after, *:before{ 
+    box-sizing: border-box; 
+}
+.clearfix:before, 
+.clearfix:after {
+     content: ''; display: table; 
+}
+.clearfix:after { clear: both; }
+.no-border {
+    outline: none;
+    border: none !important;
+}
+body {
+    box-sizing: border-box;
+    background: #fff no-repeat;
+    font-size: 14px;
+    font-family: 'ubuntu', sans-serif;
+    padding:  0;
+    margin:  0;
+    overflow-x: hidden;
+ }
+.main-header {
+    z-index: 100;
+    position: fixed;
+    display: block;
+    padding-top: 0px;
+    width: 100%;
+    height:  100px;
+    background-color: #fff;
+    margin-top: 0px;
+    transition: 0.5s ease-in-out;  
+}
+.main-header.active {
+     box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+.show-heading {
+	visibility: hidden;
+	transition: 0.3s ease-in-out;
+}
+a {
+    text-decoration: none;
+    color: #800066;
+}
+.logo {
+    width: 300px;
+    margin: 10px;
+    color:  #000;
+    text-decoration: none;
+}
+.logo img {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.logo h1 {
+    display: inline-block;
+    font-size: 2.25em;
+    position: relative;
+    padding-left: 20px;
+    font-family: ubuntu;
+    color: #909090;
+    text-decoration: none;
+    font-weight: 200;
+    float: left;
+}
+
+nav ul {
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    font-family: ubuntu;
+    color: #909090;
+    text-decoration: none;
+    float: right; 
+}
+nav ul li {
+    display:  inline;
+    padding-right: 30px;
+    list-style: none;
+    color:  #909090;
+    font-size: inherit;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s ease-in-out;
+
+}
+nav ul li a {
+	color: #909090;
+	}
+nav ul li:last-child {
+	padding-right: 40px;
+	padding-left: 15px;
+	font-size: 18px;
+	}
+nav ul li:nth-child(6) {
+	padding-right: 0px;
+	}
+nav ul li, .card ul li {
+	cursor: pointer;
+}
+
+input::search-decoration,
+input::search-cancel-button {
+	display: none; 
+}
+
+input[type=search]{
+	display: none;
+	width: 200px;
+	border-radius: 0px;	
+	vertical-align: super;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #800066;
+}
+input[type=search]:focus {
+	background-color: transparent;
+	border-color: #909090;
+}
+
+input::input-placeholder {
+	color: #999;
+	font-size: 10px;
+}
+.icon-dehaze {
+	display: none;
+	}
+.nav {
+	display: none;
+	position: fixed;
+	z-index: 10000;
+	background-color: #ededed;
+	width: 245px;
+	height: 100vh;
+	left: -245px;
+	top: 0;
+	padding: 0px;
+	transition: all 0.35s;	
+	}
+
+ .nav div {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	color: #505050;
+	font-family: ubuntu;
+	transition-property: background-color;
+	}
+.nav div:hover {
+	background-color: #ddd;
+	transition: 0.25s ease-in-out;
+	}
+.nav div:first-child span {
+	float: right;
+	color: #000;
+	margin: 25px;
+	cursor: pointer;
+	}
+.nav div a{
+	text-decoration: none;
+	display: block;
+	font-weight: 100;
+	color:  #505050;
+	padding: 2em;
+	
+	}	
+#content-wrapper {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    height:  auto;
+    clear: both;
+}
+#content-display {
+    position:  relative;
+    display: inline-block;
+    width:  100%;
+    height: 100vh;
+    padding: 0px;
+    margin:  0px;
+}
+
+#content-display h1{
+	position: absolute;
+	right: 30%;
+	top: 300px;
+	font-weight: 200;
+	font-size: 5.4em;
+	color: #909090;
+}
+.fab {
+	position: absolute;
+	/* display: none;  for now hahaha */
+	right: 5%;
+	top: 90vh;
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+	text-align: center;
+	border: 0px solid transparent;
+	background-color: #800066;
+	z-index: 30;
+   box-shadow: 0px 3px 5px rgba(0,0,0,0.50), 0px 3px 5px rgba(0,0,0,0.50);
+   cursor: pointer;
+}	
+.fab h2 {
+	color: #fff;
+	cursor: pointer;
+}
+.big-picture, 
+.big-picture > img {
+    position: relative;
+    display: inline-block;
+    width: initial;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
+/* This is similar to .big-picture except 
+ * it span the whole width of the screen */
+ 
+.intro-picture, 
+.intro-picture > img {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+}
+.relative {
+	position: relative;
+	}
+.slide-anime {
+	position: absolute !important;
+	background-color: #fff !important;
+	backface-visibility: hidden;
+	background-size: cover;
+}
+#slogan-box {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px #ddd;
+}
+
+#slogan-box h2 {
+    padding:  0px;
+    text-align: center;
+    font-family: ubuntu;
+    color: #808080;
+    font-weight: 200;
+}
+.container{
+    position:  relative;
+    z-index: -10;
+    padding:  30px 15px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+.card {
+	transition: width 0.7s ease-in-out;
+    margin: 30px 15px;
+    width: 30%;
+    height: auto;
+    min-height: 300px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.24), 0px 0px 6px rgba(0,0,0,0.24);
+    border-radius:  2px;
+    position: relative;
+    display: block;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+/* card title is given with h3 */
+.card h3 {
+    padding: 8px 16px;
+    margin: 0px;
+    font-weight: 300;
+    direction: ltr;
+    color: #606060;
+    font-size: 1.75em;
+}
+
+#pContent, #pContent2, #pContent3, 
+#pContent4, #pContent5, #pContent6, 
+#pContent7, #pContent8, #pContent9 {
+	display: none;
+}
+.card small {
+    padding: 0px 16px;
+    margin: 0px;
+    font-family: sans-serif;
+    color:  #808080;
+    font-size: 1.0em;
+}
+.card p {
+    clear: both;
+    padding: 8px 16px;
+    font-size: 1.1em;
+    word-wrap: break-word;
+    color: #404040;
+}
+.card span{
+    padding: 4px 8px;
+    font-size: 1.5em;
+    color: #909090;
+    clear: both;
+    transition: 0.5s ease-in-out;
+    border-radius: 2px;
+    cursor: pointer;
+} 
+.card  span:hover {
+	background-color: rgba(0,0,0,0.095);
+	box-shadow: 
+	outline: none;
+}
+.card ul {
+    list-style: none;
+    padding: 16px 16px;
+    margin: 0px;
+}
+.card ul li {
+    padding-left: 8px;
+    padding-bottom: 24px;
+    margin: 0px;
+    font-size: 1.25em;
+    color:  #808080;
+    list-style: none;
+    display: inline;
+}
+
+.footer {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	padding: 0px;
+	border-top: 1px solid #ccc;
+}
+.footer img {
+	position: absolute;
+	height: 60px; 
+	width: 60px;
+	padding: 16px 0px 16px 16px;
+	}
+.footer ul {
+    position: relative;
+    padding: 20px 20px 0px 0px;
+    font-family: ubuntu;
+    float: right; 
+}
+.footer ul li {
+    display:  inline;
+    padding-right: 30px;
+    list-style: none;
+    color:  #606060;
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
